@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/437a3e3f08.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <title>WeatherApp</title>
+    <link rel="stylesheet" href="src/styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="weather-box">
+        <h1 id="city"></h1>
+        <div class="temperature">
+          <h2 id="current-temp">
+            <span id="temp">28</span>
+            <a href="#" id="celsius-link" class="active">°C</a> |
+            <a href="#" id="fahrenheit-link">°F</a>
+          </h2>
+        </div>
+        <div class="col">
+          <div class="emoji">
+            <img
+              class="main"
+              id="icon-main"
+              src="http://openweathermap.org/img/wn/04d@2x.png"
+              height="120px"
+            />
+          </div>
+        </div>
+        <h3 id="current-date"></h3>
+        <form id="search-form">
+          <div class="form-group">
+            <input
+              type="search"
+              class="form-control"
+              id="city-input"
+              placeholder="Enter city here"
+              autocomplete="off"
+            />
+          </div>
+        </form>
+        <div class="row weather-forecast" id="forecast"></div>
+      </div>
+    </div>
+    <script src="src/script.js"></script>
+  </body>
+</html>

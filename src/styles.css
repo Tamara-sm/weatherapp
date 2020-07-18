@@ -1,0 +1,65 @@
+body {
+  font-family: "Yanone Kaffeesatz", sans-serif;
+}
+h1,
+h2 {
+  color: #f9fbff;
+}
+h1 {
+  font-size: 50px;
+  text-align: center;
+  margin-top: 30px;
+}
+h3 {
+  font-size: 20px;
+}
+.container {
+  position: relative;
+  left: 17%;
+  margin: 60px;
+  padding: 0;
+  width: 427px;
+  height: 707px;
+}
+.weather-box {
+  position: relative;
+  background-image: linear-gradient(to bottom, #c393ea, #8cbcfa);
+  border-radius: 20px;
+  overflow: hidden;
+  border: 2px solid lightskyblue;
+  box-shadow: 12px 12px 2px 1px rgba(151, 151, 160, 0.2);
+}
+.emoji {
+  position: relative;
+  left: 40%;
+  font-size: 100px;
+  color: #f9fbff;
+}
+.form-group {
+  margin-top: 50px;
+  margin-bottom: 10px;
+  width: 200px;
+  position: relative;
+  left: 26%;
+}
+#icons {
+  font-size: 36px;
+  color: #f9fbff;
+}
+#forcast {
+  font-size: 20px;
+  color: #f9fbff;
+}
+#current-temp #tempicon-link {
+  position: relative;
+  top: -13px;
+  left: -2px;
+  vertical-align: unset;
+}
+#current-temp {
+  text-align: center;
+  font-size: 53px;
+}
+#current-date {
+  text-align: center;
+}
