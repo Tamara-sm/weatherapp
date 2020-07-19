@@ -1,6 +1,5 @@
 let now = new Date();
 let currentDate = document.querySelector("#current-date");
-
 let days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
 let day = days[now.getDay()];
 
@@ -12,16 +11,20 @@ let min = now.getMinutes();
 
 currentDate.innerHTML = `${day}, ${date}, ${year} <br /> ${hour}:${min}`;
 
-//api calls
-
 function formatHours(timestamp) {
   let date = new Date(timestamp);
-  let hours = now.getHours();
-  let min = now.getMinutes();
-
+  let hours = date.getHours();
+  if (hours < 10) {
+    hours = `0${hours}`;
+  }
+  let minutes = date.getMinutes();
+  if (minutes < 10) {
+    minutes = `0${minutes}`;
+  }
   return `${hours}: ${min}`;
 }
 
+//api calls
 function displayTemperature(response) {
   let descriptionElement = document.querySelector("#description");
   descriptionElement.innerHTML = response.data.weather[0].description;
@@ -81,4 +84,4 @@ function handleSubmit(event) {
 let form = document.querySelector("#search-form");
 form.addEventListener("submit", handleSubmit);
 
-search("Japan");
+search("Miami");
