@@ -46,15 +46,15 @@ function displayForecast(response) {
     forecast = response.data.list[index];
     forecastElement.innerHTML += `
         <div class="row-sm-8">
-          <h3>
+          <h4>
             ${formatHours(forecast.dt * 1000)}
-          </h3>
+          </h4>
           <img src="http://openweathermap.org/img/wn/${
             forecast.weather[0].icon
-          }@2x.png"/>
+          }@2x.png"style="margin:1px 18px 0;height:48px;width:48px"/>
           <div class="weather- forecast-temp"><strong>${Math.round(
             forecast.main.temp_max
-          )}°</strong>  ${Math.round(forecast.main.temp_min)}°
+          )}°</strong> | ${Math.round(forecast.main.temp_min)}°
           </div>
         </div>`;
   }
@@ -76,22 +76,7 @@ function handleSubmit(event) {
   search(cityInputElement.value);
 }
 
-search("Japan");
-
 let form = document.querySelector("#search-form");
 form.addEventListener("submit", handleSubmit);
 
-//api current location
-function setPositon(position) {
-  let apikey = "7617dbfebdf449723a30b5c2d2231c02";
-  let lat = position.coords.latitude;
-  let long = position.coords.longitude;
-  let api = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${long}&appid=${apikey}&units=metric`;
-
-  axios.get(api).then(currentWeather);
-}
-function getCurrentPosition() {
-  navigator.geolocation.getCurrentPosition(setPositon);
-}
-let button = document.querySelector("#geolocation");
-button.addEventListener("click", getCurrentPosition);
+search("Japan");

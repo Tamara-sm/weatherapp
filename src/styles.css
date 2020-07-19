@@ -31,9 +31,7 @@ h3 {
 }
 .emoji {
   position: relative;
-  left: 40%;
-  font-size: 100px;
-  color: #f9fbff;
+  left: 36%;
 }
 .form-group {
   margin-top: 50px;
@@ -41,6 +39,13 @@ h3 {
   width: 200px;
   position: relative;
   left: 26%;
+}
+.details {
+  margin: 5.5rem 0 1.5rem 0;
+  display: flex;
+  text-align: center;
+  justify-content: space-evenly;
+  color: #f9fbff;
 }
 #icons {
   font-size: 36px;
@@ -62,4 +67,5 @@ h3 {
 }
 #current-date {
   text-align: center;
+  font-size: 30px;
 }
