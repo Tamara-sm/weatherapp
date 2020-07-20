@@ -96,3 +96,23 @@ h3 {
   font-size: 30px;
   color: #f9fbff;
 }
+.info {
+  position: absolute;
+  left: 328px;
+  top: 214px;
+  color: #f9fbff;
+}
+.speed {
+  position: absolute;
+  left: 22px;
+  top: 1px;
+  font-size: 20px;
+  color: #f9fbff;
+}
+.symb {
+  position: absolute;
+  left: 30px;
+  top: 34px;
+  font-size: 20px;
+  color: #f9fbff;
+}

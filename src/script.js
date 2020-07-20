@@ -26,6 +26,10 @@ function formatHours(timestamp) {
 
 //api calls
 function displayTemperature(response) {
+  let humidity = document.querySelector("#humidity");
+  humidity.innerHTML = Math.round(response.data.wind.speed);
+  let wind = document.querySelector("#wind");
+  wind.innerHTML = Math.round(response.data.wind.speed);
   let descriptionElement = document.querySelector("#description");
   descriptionElement.innerHTML = response.data.weather[0].description;
   let temperatureElement = document.querySelector("#temp");
