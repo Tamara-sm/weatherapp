@@ -1,5 +1,5 @@
 body {
-  font-family: "Yanone Kaffeesatz", sans-serif;
+  font-family: "Quicksand", sans-serif;
 }
 h1,
 h2 {
@@ -35,13 +35,14 @@ h5 {
   background-image: linear-gradient(to bottom, #f47990, #e17ba1, #ba82c5);
   border-radius: 20px;
   overflow: hidden;
-  border: 2px solid lightskyblue;
+  border: none;
   box-shadow: 12px 12px 2px 1px rgba(151, 151, 160, 0.2);
 }
 
 .emoji {
   position: relative;
   left: 36%;
+  top: -54px;
 }
 .form-group {
   margin-top: 50px;
@@ -66,7 +67,7 @@ h5 {
 }
 .temperature-value {
   position: relative;
-  left: 17pc;
+  left: 16pc;
   top: -5pc;
 }
 .footer {
@@ -77,15 +78,15 @@ h5 {
 }
 .hello {
   position: relative;
-  left: 176px;
-  bottom: -9px;
-  font-size: 23px;
+  left: 141px;
+  bottom: -210px;
+  font-size: 19px;
   color: #f9fbff;
   text-transform: capitalize;
 }
 .info {
   position: absolute;
-  left: 24px;
+  left: 19px;
   top: 214px;
   color: #f9fbff;
 }
@@ -93,13 +94,13 @@ h5 {
   position: relative;
   left: 20px;
   top: -34px;
-  font-size: 20px;
+  font-size: 18px;
   color: #f9fbff;
 }
 .humidity {
   position: absolute;
   top: 2pc;
-  font-size: 20px;
+  font-size: 18px;
 }
 .symb {
   position: absolute;
@@ -124,10 +125,13 @@ h5 {
   text-align: center;
   font-size: 53px;
   position: relative;
-  left: 22px;
+  left: 6px;
 }
 #current-date {
+  margin: 20px;
   text-align: center;
+  position: relative;
+  top: -4pc;
   font-size: 30px;
   color: #f9fbff;
 }
