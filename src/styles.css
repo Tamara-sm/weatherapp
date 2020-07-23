@@ -38,6 +38,7 @@ h5 {
   border: 2px solid lightskyblue;
   box-shadow: 12px 12px 2px 1px rgba(151, 151, 160, 0.2);
 }
+
 .emoji {
   position: relative;
   left: 36%;
@@ -59,9 +60,14 @@ h5 {
 
 .active {
   display: inline-block;
-  font-size: 32px;
+  font-size: 20px;
   position: relative;
-  top: -20px;
+  top: 5px;
+}
+.temperature-value {
+  position: relative;
+  left: 17pc;
+  top: -5pc;
 }
 .footer {
   position: absolute;
