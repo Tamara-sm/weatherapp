@@ -32,7 +32,7 @@ h5 {
 }
 .weather-box {
   position: relative;
-  background-image: linear-gradient(to bottom, #c393ea, #8cbcfa);
+  background-image: linear-gradient(to bottom, #f47990, #e17ba1, #ba82c5);
   border-radius: 20px;
   overflow: hidden;
   border: 2px solid lightskyblue;
@@ -85,16 +85,21 @@ h5 {
 }
 .info {
   position: absolute;
-  left: 328px;
+  left: 24px;
   top: 214px;
   color: #f9fbff;
 }
 .speed {
-  position: absolute;
-  left: 22px;
-  top: 1px;
+  position: relative;
+  left: 20px;
+  top: -34px;
   font-size: 20px;
   color: #f9fbff;
+}
+.humidity {
+  position: absolute;
+  top: 2pc;
+  font-size: 20px;
 }
 .symb {
   position: absolute;
